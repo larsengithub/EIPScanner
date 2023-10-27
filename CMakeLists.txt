@@ -7,8 +7,6 @@ set(EIPSCANNER_FULL_VERSION ${EIPSCANNER_MAJOR_VERSION}.${EIPSCANNER_MINOR_VERSI
 
 project(EIPScanner
     VERSION ${EIPSCANNER_FULL_VERSION}
-    DESCRIPTION "Free implementation of EtherNet/IP in C++"
-    HOMEPAGE_URL "https://github.com/nimbuscontrols/EIPScanner"
     )
 
 set(CMAKE_CXX_STANDARD 20)
