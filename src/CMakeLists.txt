@@ -64,12 +64,12 @@ set_target_properties(
         VERSION ${EIPSCANNER_FULL_VERSION}
         SOVERSION ${EIPSCANNER_MAJOR_VERSION})
 
-install(TARGETS EIPScanner EIPScannerS
+install(TARGETS EIPScannerS
         LIBRARY
             DESTINATION lib
         ARCHIVE
             DESTINATION lib)
 
 install(DIRECTORY ${PROJECT_SOURCE_DIR}/src/
-        DESTINATION include/EIPScanner
+        DESTINATION include/EIPScannerS
         FILES_MATCHING PATTERN "*.h*")
