@@ -8,7 +8,7 @@ set(EIPSCANNER_FULL_VERSION ${EIPSCANNER_MAJOR_VERSION}.${EIPSCANNER_MINOR_VERSI
 project(EIPScanner
     VERSION ${EIPSCANNER_FULL_VERSION}
     )
-
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static -static-libgcc -static-libstdc++ -pthread")
 option(ENABLE_VENDOR_SRC "Enable vendor source" ON)
 option(TEST_ENABLED "Enable unit test" OFF)
 option(EXAMPLE_ENABLED "Build examples" OFF)
